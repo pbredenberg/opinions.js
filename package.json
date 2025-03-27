@@ -7,6 +7,11 @@
     "opinions": "./dist/index.js",
     "opinions.cmd": "./dist/cli.cmd"
   },
+  "files": [
+    "dist",
+    "stuff",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc && cp src/cli.cmd dist/",
     "start": "node dist/index.js",
@@ -37,7 +42,7 @@
     "config"
   ],
   "author": "Paul Bredenberg",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pbredenberg/opinions.js.git"
   },

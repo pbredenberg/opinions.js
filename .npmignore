@@ -1,0 +1,38 @@
+# Source files
+src/
+*.ts
+
+# Development files
+.github/
+scripts/
+.editorconfig
+.gitignore
+.npmignore
+tsconfig.json
+*.log
+
+# Test files
+test/
+coverage/
+
+# Documentation
+CHANGELOG.md
+CONTRIBUTING.md
+README.md
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/*.ts
+dist/*.map 
