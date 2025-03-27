@@ -73,7 +73,7 @@ async function installFiles(options: InstallOptions): Promise<void> {
   }
 }
 
-async function main(): Promise<void> {
+export async function main(): Promise<void> {
   const argv = minimist(process.argv.slice(2), {
     string: ["path"],
     boolean: ["force", "help"],
@@ -100,10 +100,12 @@ async function main(): Promise<void> {
   process.exit(1);
 }
 
-// Run the CLI
-main().catch((error) => {
-  console.error(
-    `Error: ${error instanceof Error ? error.message : String(error)}`
-  );
-  process.exit(1);
-});
+// Run the CLI if this file is being run directly
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(
+      `Error: ${error instanceof Error ? error.message : String(error)}`
+    );
+    process.exit(1);
+  });
+}
