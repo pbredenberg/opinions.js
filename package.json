@@ -1,6 +1,6 @@
 {
   "name": "opinions.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A small CLI tool that installs various configuration files for JS projects.",
   "main": "dist/index.js",
   "bin": {
