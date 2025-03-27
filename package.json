@@ -14,7 +14,13 @@
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
     "link": "npm run build && npm link",
-    "unlink": "npm unlink"
+    "unlink": "npm unlink",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch",
+    "publish": "np",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
@@ -42,7 +48,10 @@
   "devDependencies": {
     "@types/minimist": "^1.2.5",
     "@types/node": "^20.11.24",
+    "conventional-changelog-cli": "^4.1.0",
+    "np": "^10.2.0",
     "rimraf": "^5.0.5",
+    "standard-version": "^9.5.0",
     "typescript": "^5.3.3"
   }
 }
