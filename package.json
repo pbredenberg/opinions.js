@@ -1,0 +1,48 @@
+{
+  "name": "opinions.js",
+  "version": "0.0.1",
+  "description": "A small CLI tool that installs various configuration files for JS projects.",
+  "main": "dist/index.js",
+  "bin": {
+    "opinions": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "test",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "link": "npm run build && npm link",
+    "unlink": "npm unlink"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbredenberg/opinions.js.git"
+  },
+  "keywords": [
+    "standards",
+    "js",
+    "ts",
+    "prettier",
+    "editorconfig",
+    "cli",
+    "config"
+  ],
+  "author": "Paul Bredenberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbredenberg/opinions.js.git"
+  },
+  "homepage": "https://github.com/pbredenberg/opinions.js#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.11.24",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
