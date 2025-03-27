@@ -12,7 +12,7 @@ tsconfig.json
 *.log
 
 # Test files
-test/
+src/__tests__/
 coverage/
 
 # Documentation
@@ -36,3 +36,6 @@ node_modules/
 # Build files
 dist/*.ts
 dist/*.map 
+dist/__tests__/
+
+.github/
