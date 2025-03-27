@@ -4,10 +4,11 @@
   "description": "A small CLI tool that installs various configuration files for JS projects.",
   "main": "dist/index.js",
   "bin": {
-    "opinions": "./dist/index.js"
+    "opinions": "./dist/index.js",
+    "opinions.cmd": "./dist/cli.cmd"
   },
   "scripts": {
-    "build": "tsc && chmod +x dist/index.js",
+    "build": "tsc && cp src/cli.cmd dist/",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
     "test": "test",
